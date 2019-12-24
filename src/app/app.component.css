@@ -1,0 +1,13 @@
+.zatoolbar 
+{
+    color:crimson; 
+    background-color:gray;
+    text-align: left; 
+    font-family: Times New Roman;
+    outline-style: double;
+    outline-color: black;
+    outline-width: 1.5ch; 
+    font-size: 4ch; 
+    font-style: italic; 
+
+}

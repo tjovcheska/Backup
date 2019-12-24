@@ -3,10 +3,11 @@
     height: 25%;
     margin: 2em !important;
     padding: 2em !important;
-    float: left;
+    float: center;
+
 }
 
 .sizeImg{
     width: 110%;
-    height: 250px;
+    height: 130%;
 }

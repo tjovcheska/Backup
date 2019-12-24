@@ -23,10 +23,10 @@ export class PostDetailsComponent implements OnInit {
     private apiService: InstagramApiService) {
 
       this.newComment= { id: this.data.clickedPost.id, 
-                      accountName: '@FLV.MCA', 
+                      accountName: '@BeautyCorner', 
                       comment: '',
-                      photoUrl: 'https://cdn.pixabay.com/photo/2016/08/20/05/38/avatar-1606916_960_720.png',
-                      fullName: 'Filip Vilevski'};
+                      photoUrl: '',
+                      fullName: 'BeautyCorner'};
       //Session2
       // this.postComments = [
       //   { id: 1,  fullName: 'John Doe'      , accountName: '@JohnDoe'          , comment: 'Awesome Dog',                     photoUrl:  'https://cdn.pixabay.com/photo/2016/08/20/05/38/avatar-1606916_960_720.png' },

@@ -10,7 +10,7 @@ export class InstagramApiService {
   constructor(private http: HttpClient) { }
 
   getPosts():Observable<Post[]>{
-    return this.http.get<Post[]>("https://5df115fd9df6fb00142bd818.mockapi.io/api/posts")
+    return this.http.get<Post[]>("http://5e02628c63d08b0014a288a2.mockapi.io/Blog")
   }
 
   getPostComments(postId: number):Observable<PostComment[]>{
