@@ -10,3 +10,8 @@ class PostComment {
     photoUrl: string;
     comment: string;
 }
+
+class Description {
+    id:number;
+    description: string;
+}

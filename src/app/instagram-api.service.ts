@@ -21,4 +21,13 @@ export class InstagramApiService {
     return this.http
     .post(`http://5e02628c63d08b0014a288a2.mockapi.io/Blog/1${postId}/BlogComments`, comment);
   }
+
+  getDescription (postId: number):Observable<Description[]>
+{
+  return this.http.get<Description[]>(`http://5e02628c63d08b0014a288a2.mockapi.io/Blog/1${postId}/BlogDescription`);
+}
+  postDescription (postId: number, description: Description)
+  {
+    return this.http.post(`http://5e02628c63d08b0014a288a2.mockapi.io/Blog/1${postId}/BlogDescription`, description);
+  }
 }
