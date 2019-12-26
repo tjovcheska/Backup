@@ -1,7 +1,7 @@
 <div [ngStyle]="{'background' : 'url(https://i.gifer.com/76YS.gif)'}">
 <mat-toolbar class="zatoolbar"><span class="title-center">BEAUTY CORNER</span></mat-toolbar>
 
-<div *ngFor="let post of posts">
+<div class="center" *ngFor="let post of posts">
   <app-posts  [pictureUrl]="post.photoUrl" ></app-posts>
   <button class="button button1" (click)="onClick(post)">See more...</button>
 </div>

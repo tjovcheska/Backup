@@ -22,7 +22,7 @@
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     width: 30%;
   }
@@ -32,5 +32,8 @@
   .title-center {
     margin: 0 auto;
   }
+  .center{
 
+    margin-inline-start: 480px;
+}
   

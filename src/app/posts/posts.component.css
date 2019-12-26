@@ -3,7 +3,9 @@
     height: 25%;
     margin: 2em !important;
     padding: 2em !important;
-    float: center;
+    position: auto;
+
+    margin-inline-start: 480px;
 
 }
 
