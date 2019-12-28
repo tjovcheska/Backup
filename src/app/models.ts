@@ -11,7 +11,7 @@ class PostComment {
     comment: string;
 }
 
-class Description {
+class PostDescription {
     id:number;
     description: string;
 }

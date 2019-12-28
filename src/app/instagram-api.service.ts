@@ -22,12 +22,12 @@ export class InstagramApiService {
     .post(`http://5e02628c63d08b0014a288a2.mockapi.io/Blog/${postId}/BlogComments`, comment);
   }
 
-  getDescription (postId: number):Observable<Description[]>
+ /* getDescription (postId: number):Observable<Description[]>
 {
   return this.http.get<Description[]>(`http://5e02628c63d08b0014a288a2.mockapi.io/Blog/${postId}/BlogDescription`);
+}*/
+
+getPostDescription(postId: number):Observable<PostDescription[]>{
+  return this.http.get<PostDescription[]>(`http://5e02628c63d08b0014a288a2.mockapi.io/Blog/${postId}/BlogDescription`)
 }
-  postDescription (postId: number, description: Description)
-  {
-    return this.http.post(`http://5e02628c63d08b0014a288a2.mockapi.io/Blog/${postId}/BlogDescription`, description);
-  }
 }

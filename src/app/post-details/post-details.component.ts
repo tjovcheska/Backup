@@ -14,7 +14,7 @@ export interface DialogData {
 export class PostDetailsComponent implements OnInit {
   postComments: PostComment[] = [];
   newComment: PostComment;
-  //postDescription: Description[] = [];
+  postDescription: PostDescription[] = [];
   ngOnInit() {
   }
 
@@ -32,6 +32,11 @@ export class PostDetailsComponent implements OnInit {
       this.apiService.getPostComments(this.data.clickedPost.id)
           .subscribe((comments)=>{
             this.postComments = comments;
+          });
+
+      this.apiService.getPostDescription(this.data.clickedPost.id)
+          .subscribe((description)=>{
+            this.postDescription = description;
           });
     }
 

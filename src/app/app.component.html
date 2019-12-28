@@ -1,5 +1,6 @@
 <!--<div [ngStyle]="{'background' : 'url(https://i.gifer.com/76YS.gif)'}">-->
 
+
 <mat-toolbar class="zatoolbar"><span class="title-center">BEAUTY CORNER</span></mat-toolbar>
 
 <!--<div class="center" *ngFor="let post of posts">
@@ -10,8 +11,8 @@
 <cdk-virtual-scroll-viewport [itemSize]="200" style="height: 700px">
   <div class="center" *cdkVirtualFor="let post of posts">
     <app-posts [pictureUrl]="post.photoUrl"></app-posts>
-    <button class="button button1" (click)="onClick(post)">See more...</button>
-    <button  (click)="onClickCount()" >Add to basket</button>
+    <button class="button" (click)="onClick(post)">See more...</button>
+    <button class="button" (click)="onClickCount()" >Add to basket</button>
   </div>
   <div style="padding: 30px;">
     <table class="centerButton"> 
@@ -24,8 +25,8 @@
     </table>
     
   </div>
-  <div style="width: 200px; height: 100px; border: 3px solid pink; display: inline-block;">
-    <img src="https://cdn.imgbin.com/17/18/18/imgbin-shopping-cart-computer-icons-add-to-cart-button-ZMviz5urhFd0fR7r1uz7FGHLH.jpg" alt="Basket" style="width: 100px; height: 100px;">
+  <div style="width: 200px; height: 100px; border: 3px solid pink; display: inline-block; margin-left: 10px; margin-bottom: 200px;">
+    <img src="https://assets.website-files.com/5ba55685ff818b6009217323/5bad3d1ff688c1d33abb418c_Hunter-Design-ebay-cart.gif" alt="Basket" style="width: 100px; height: 100px;">
     {{basketNumber}}
   </div>
   </cdk-virtual-scroll-viewport>

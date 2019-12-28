@@ -1,10 +1,11 @@
 <img mat-card-image [src]="data.clickedPost.photoUrl" alt="Photo of cuci" class="sizeImg2 float-left">
 
-<!--<div *ngFor="let postDescript of postDescription">
-        <p>{{postDescript.description}}</p>
-</div>-->
 
 <div class="scroll">
+
+        <div class="description" *ngFor="let postDescript of postDescription">
+                <p>{{postDescript.description}}</p>
+        </div>
 
         <div class="comment"  *ngFor="let postComment of postComments">
                 <mat-card-header>

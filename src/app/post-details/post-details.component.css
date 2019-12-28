@@ -16,3 +16,8 @@
     overflow: auto;
     height: 80%;
 }
+
+.description{
+    width: 300px;
+    float: right;
+}

@@ -11,41 +11,37 @@
     font-style: italic; 
 
 }
-.button {
+
+.button 
+{
     background-color:crimson; 
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 25px;
     text-align: center;
-    text-decoration:underline;
-    display: inline-block;
+    text-decoration: wavy;
+    display: inline-flex;
     font-size: 16px;
-    margin: 5px 2px;
-    cursor: cell;
+    margin: 2px 2px;
+    cursor: grab;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
-    width: 30%;
-  }
-  .button1:hover {
+    width: 25%;
+    margin-inline-start: 0px;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-    
   }
-  .title-center {
+
+  .title-center 
+  {
     margin-inline-start: 480px;
   }
-  .center{
+
+  .center
+{
 
     margin-inline-start: 480px;
 }
-.centerNext{
 
-  margin-inline-start: 580px;
-}
-
-.centerBack{
-
-  margin-inline-start: 450px;
-}
 .centerButton
 {
   margin-inline-start: 550px;
