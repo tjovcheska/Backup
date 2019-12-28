@@ -15,6 +15,8 @@ export class AppComponent {
 
   pageNumber: number=1;
 
+  basketNumber: number=0;
+
   constructor(public dialog: MatDialog, private apiService: InstagramApiService) {
 
     /*this.apiService.getPosts().subscribe((receivedPosts)=>{
@@ -54,4 +56,10 @@ export class AppComponent {
       this.posts = receivedPosts;
     });
   }
+
+  onClickCount()
+  {
+    this.basketNumber++;
+  }
+ 
 }

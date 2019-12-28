@@ -37,6 +37,15 @@
 
     margin-inline-start: 480px;
 }
+.centerNext{
+
+  margin-inline-start: 580px;
+}
+
+.centerBack{
+
+  margin-inline-start: 450px;
+}
 .centerButton
 {
   margin-inline-start: 550px;
