@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -17,7 +16,7 @@ import { PostDetailsComponent } from './post-details/post-details.component';
 import { DemoMaterialModule } from 'src/mat.modules';
 import { FormsModule } from '@angular/forms';  
 import { HttpClientModule } from '@angular/common/http';
-
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 @NgModule({
   declarations: [
@@ -31,7 +30,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
-    DemoMaterialModule
+    DemoMaterialModule,
+    ScrollingModule
   ],
   providers: [],
   entryComponents: [PostDetailsComponent, PostsComponent],

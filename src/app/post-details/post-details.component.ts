@@ -14,7 +14,7 @@ export interface DialogData {
 export class PostDetailsComponent implements OnInit {
   postComments: PostComment[] = [];
   newComment: PostComment;
-  postDescription: Description[] = [];
+  //postDescription: Description[] = [];
   ngOnInit() {
   }
 

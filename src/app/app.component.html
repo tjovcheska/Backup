@@ -1,8 +1,21 @@
-<div [ngStyle]="{'background' : 'url(https://i.gifer.com/76YS.gif)'}">
+<!--<div [ngStyle]="{'background' : 'url(https://i.gifer.com/76YS.gif)'}">-->
+
 <mat-toolbar class="zatoolbar"><span class="title-center">BEAUTY CORNER</span></mat-toolbar>
 
-<div class="center" *ngFor="let post of posts">
+<!--<div class="center" *ngFor="let post of posts">
   <app-posts  [pictureUrl]="post.photoUrl" ></app-posts>
   <button class="button button1" (click)="onClick(post)">See more...</button>
-</div>
-</div>
+</div>-->
+
+<cdk-virtual-scroll-viewport [itemSize]="200" style="height: 700px">
+  <div class="center" *cdkVirtualFor="let post of posts">
+    <app-posts [pictureUrl]="post.photoUrl"></app-posts>
+    <button class="button button1" (click)="onClick(post)">See more...</button>
+  </div>
+  <div style="padding: 30px;">
+    <button class="centerButton"(click)="onLoadMore()">Next</button>
+    <button class="centerButton">{{pageNumber}}</button>
+    <button class="centerButton"(click)="onLoadBack()">Back</button>
+  </div>
+  </cdk-virtual-scroll-viewport>
+

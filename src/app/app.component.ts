@@ -13,11 +13,14 @@ export class AppComponent {
 
   posts: Post[] = [];
 
+  pageNumber: number=1;
+
   constructor(public dialog: MatDialog, private apiService: InstagramApiService) {
 
-    this.apiService.getPosts().subscribe((receivedPosts)=>{
+    /*this.apiService.getPosts().subscribe((receivedPosts)=>{
       this.posts = receivedPosts;
-    });
+    });*/
+    this.getPosts();
   }
 
   onClick(post: Post){
@@ -29,6 +32,26 @@ export class AppComponent {
 
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
+    });
+  }
+
+  onLoadMore()
+  {
+    this.pageNumber++;
+    this.getPosts();
+  }
+
+  onLoadBack()
+  {
+    this.pageNumber--;
+    this.getPosts();
+  }
+
+  getPosts()
+  {
+    this.apiService.getPosts(this.pageNumber).subscribe((receivedPosts)=>
+    {
+      this.posts = receivedPosts;
     });
   }
 }
