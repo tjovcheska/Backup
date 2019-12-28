@@ -2,14 +2,15 @@
     width: 20%;
     height: 25%;
     margin: 2em !important;
-    padding: 2em !important;
-    position: auto;
+    padding: 6em !important;
+    position: relative;
 
     margin-inline-start: 480px;
 
 }
 
 .sizeImg{
-    width: 110%;
-    height: 130%;
+    width: 150%;
+    height: 170%;
+    margin-inline-start: -40px;
 }
